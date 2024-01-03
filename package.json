@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
+    "build-chat": "run-p type-check \"build-chat-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
+    "build-chat-only": "vite build --config vite.config.chat",
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
